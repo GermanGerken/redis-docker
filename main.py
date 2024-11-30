@@ -4,7 +4,7 @@ from redis.exceptions import RedisError
 
 def main():
     try:
-        pool = redis.ConnectionPool(host='192.168.0.207', port=6379, decode_responses=True)
+        pool = redis.ConnectionPool(host='', port=6379, decode_responses=True)
         redis_client = redis.Redis(connection_pool=pool)
 
         print("Pinging Redis server...")
